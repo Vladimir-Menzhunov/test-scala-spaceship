@@ -1,0 +1,10 @@
+# Routes
+
+GET /numberOfPlaces     controllers.BoxController.getNumberOfPlaces()
+GET /countShips         controllers.BoxController.countShip()
+GET /next               controllers.BoxController.nextShip()
+POST /numberOfPlaces    controllers.BoxController.setNumberOfPlaces()
+POST /ship              controllers.BoxController.addShip()
+
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
